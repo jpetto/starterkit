@@ -25,20 +25,150 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
+                <h1 class="title">Web Dev Starter Kit</h1>
                 <nav>
                     <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">Learning Resources</a></li>
+                        <li><a href="#">Text Editors</a></li>
+                        <li><a href="#">Browsers</a></li>
+                        <li><a href="#">Miscellaneous</a></li>
                     </ul>
                 </nav>
             </header>
         </div>
 
-        <div class="main-container">
+        <main role="main" class="main-container">
             <div class="main wrapper clearfix">
+                <section>
+                    <h2>Learning Resources</h2>
 
+                    <h3>Twitter</h3>
+
+                    <ul>
+                        <li>
+                            <a rel="external" href="https://twitter.com/smashingmag">Smashing Magazine</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/Real_CSS_Tricks">CSS-Tricks</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/alistapart">A List Apart</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/JavaScriptDaily">JavaScript Daily</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/FirefoxDevTools">Firefox DevTools</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/ChromeDevTools">Chrome DevTools</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/paul_irish">Paul Irish</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://twitter.com/iedevchat">IE Dev Chat</a>
+                        </li>
+                    </ul>
+
+                    <h3>Learning</h3>
+
+                    <ul>
+                        <li>
+                            <a rel="external" href="http://www.codecademy.com/">Codeacademy</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="http://24ways.org/">24 Ways</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="http://tympanus.net/codrops/">Codrops</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Text Editors</h2>
+
+                    <ul>
+                        <li>
+                            <a rel="external" href="http://www.sublimetext.com/3">Sublime Text 3</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="http://macromates.com/">TextMate</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://www.panic.com/coda/">Coda</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://atom.io/">Atom</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Browsers</h2>
+
+                    <ul>
+                        <li>
+                            <a rel="external" href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://www.mozilla.org/en-US/firefox/developer/">Firefox Developer Edition</a>
+
+                            <p class="alert">
+                                <strong class="tip">Tip!</strong> - To toggle
+                                Dev Tools in Firefox, on OS X press
+                                <code>cmd + option + i</code>. For Windows,
+                                it's <code></code>
+                            </p>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://www.google.com/chrome/browser/desktop/index.html">Chrome</a>
+                        </li>
+                        <li>
+                            <a rel="external" href="https://www.google.com/chrome/browser/canary.html">Chrome Canary</a>
+                        </li>
+                    </ul>
+
+                    <h3>Testing in IE</h3>
+
+                    <p>
+                        If you're not on a Windows machine, testing in IE is
+                        going to be at least a little inconvenient. You'll
+                        need to set up some virtualization software:
+                        <a rel="external" href="http://www.vmware.com/">VMWare</a>,
+                        <a rel="external" href="http://www.parallels.com/products/desktop/">Parallels</a>,
+                        and <a rel="external" href="https://www.virtualbox.org/">VirtualBox</a>
+                        are all good options.
+                    </p>
+
+                    <p>
+                        Next, head to
+                        <a rel="external" href="https://www.modern.ie/virtualization-tools#downloads">modern.IE</a>
+                        and download all the virtual machines you think you'll need. It's pretty safe to start
+                        with IE 9, 10, &amp; 11. Depending on the project, you may need to get IE 8 as well.
+                    </p>
+
+                    <p>
+                        In addition to virtual machines, Microsoft offers a
+                        <a rel="external" href="https://remote.modern.ie/">remote testing service</a>
+                        that's a bit less involved than installing virtual machines. As of this writing,
+                        the remote service only offers IE 11 Technical Preview. Hopefully they'll offer
+                        additional IE versions through this service in the near future.
+                    </p>
+
+                    <h3>Other Browsers</h3>
+
+                    <p>
+                        <a rel="external" href="https://en.wikipedia.org/wiki/Safari_%28web_browser%29" title="Can you even download Safari from a URL? I guess not, huh?">Safari</a>
+                        and <a rel="external" href="http://www.opera.com/">Opera</a> are much less used
+                        than Firefox &amp; Chrome, but deserve attention nonetheless (particularly Safari).
+                        If you're not on a Mac, I'm not sure how you can test in Safari.
+                    </p>
+                </section>
                 <article>
                     <header>
                         <h1>article header h1</h1>
@@ -64,7 +194,7 @@
                 </aside>
 
             </div> <!-- #main -->
-        </div> <!-- #main-container -->
+        </main> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
