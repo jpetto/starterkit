@@ -1,0 +1,29 @@
+@import 'reset';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.h1 {
+    font-size: 3.2rem;
+}
+
+.h2 {
+    font-size: 2.4rem;
+}
