@@ -26,6 +26,7 @@ body {
 
 a {
     color: #ff5054;
+    color: #fff;
 }
 
 p {
@@ -92,7 +93,7 @@ code {
 }
 
 .section {
-    margin-bottom: $baseUnit * 2;
+    margin: $baseUnit auto ($baseUnit * 2);
 }
 
 .alert {
@@ -108,10 +109,42 @@ code {
     text-transform: uppercase;
 }
 
+#input {
+    background: #9ED6E5;
+    background: #7bcde0; /* Old browsers */
+background: -moz-linear-gradient(top,  #7bcde0 0%, #9ed6e5 18%, #9ed6e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7bcde0), color-stop(18%,#9ed6e5), color-stop(100%,#9ed6e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #7bcde0 0%,#9ed6e5 18%,#9ed6e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #7bcde0 0%,#9ed6e5 18%,#9ed6e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #7bcde0 0%,#9ed6e5 18%,#9ed6e5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #7bcde0 0%,#9ed6e5 18%,#9ed6e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7bcde0', endColorstr='#9ed6e5',GradientType=0 ); /* IE6-9 */
+
+}
+
+#output {
+    background: #F9CF53;
+    background: #FAD47F;
+    background: #AAE2D0;
+    background: #96e0c7; /* Old browsers */
+background: -moz-linear-gradient(top,  #96e0c7 0%, #aae2d0 18%, #aae2d0 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96e0c7), color-stop(18%,#aae2d0), color-stop(100%,#aae2d0)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #96e0c7 0%,#aae2d0 18%,#aae2d0 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #96e0c7 0%,#aae2d0 18%,#aae2d0 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #96e0c7 0%,#aae2d0 18%,#aae2d0 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #96e0c7 0%,#aae2d0 18%,#aae2d0 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96e0c7', endColorstr='#aae2d0',GradientType=0 ); /* IE6-9 */
+
+}
+
 @media (min-width: 600px) {
     .container {
         font-size: 1.8rem;
         line-height: 1.6;
+    }
+
+    .section {
+        margin: $baseUnit * 2 auto;
     }
 
     .h1 {
@@ -124,5 +157,11 @@ code {
 
     .h3 {
         font-size: 3rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .section {
+        width: 700px;
     }
 }
